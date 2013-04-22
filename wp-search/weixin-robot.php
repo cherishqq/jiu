@@ -67,13 +67,14 @@ class wechatCallback
                 $postObj = simplexml_load_string($postStr, 'SimpleXMLElement', LIBXML_NOCDATA);
                 $fromUsername = $postObj->FromUserName;
                 $toUsername = $postObj->ToUserName;
-                $msgType = strtolower(trim($postObj->MsgType));
+                $msgType = strtolower(trim($postObj->MsgTydpe));
                 if($msgType == 'event'){
                     $this->keyword = strtolower(trim($postObj->Event));
                 }else{
                     $this->keyword = strtolower(trim($postObj->Content));
                 }
         //   }
+
 		
 
 
@@ -274,8 +275,14 @@ if(!function_exists('weixin_custom_keywords')){
 	function query_custom_keywords($arr ,$toUsername){
 
 		 echo "toUsername.$toUsername";
+		 $db = new MysqliDb('localhost', 'root', 'root', 'dingcan3');
 		//echo "hello.$toUsername";
-		 $params = array( $toUsername);
+		
+		 //var_dump($toUsername);
+		 echo '....';
+		 $temp = (array)$toUsername;
+		 print_r($temp[0]);
+		 $params = array($temp[0]);
 		 $results = $db->rawQuery("select * FROM `user_regular`  where  `devId` = ? ", $params);
 		 echo "count:".count($results);
 		 
