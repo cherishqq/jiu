@@ -6,8 +6,8 @@
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-   <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.css">
-  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.css">
+ <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
  <script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
     
     <style>
@@ -125,86 +125,76 @@
 
 </head>
 <body>
-<div data-role="page" id="demo-page" data-theme="d">
+<div data-role="page" id="demo-page" data-theme="b">
  	
- 	<div data-role="header" data-theme="c">
-        <h1>Bikes</h1>
+ 	<div data-role="header" data-theme="b">
+        <h1>厦门千禧海景大酒店</h1>
         <a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
     </div><!-- /header -->
 
     <div data-role="content">
 
     	<div class="article">
-    		<p></p>
-
-            <h2>Fixed Gear</h2>
-
-            <p>A fixed-gear or fixed-wheel bicycle, commonly known as a fixie, is a bicycle that has a drivetrain with no freewheel mechanism. The freewheel was developed early in the history of bicycle design but the fixed-gear bicycle remained the standard track racing design. More recently the 'fixie' has become a popular alternative among mainly urban cyclists, offering the advantages of simplicity compared with the standard multi-geared bicycle.</p>
-
-            <p><small>Source: Wikipedia</small></p>
-
-            <p><a href="#right-panel" data-role="button" data-theme="b" data-inline="true" data-mini="true" data-shadow="false">Share</a></p>
-
+    		
 		</div><!-- /article -->
 
     </div><!-- /content -->
     
-    <div data-role="panel" id="left-panel" data-theme="c">
+    <div data-role="panel" id="left-panel" data-theme="b">
 
-        <ul data-role="listview" data-theme="d">
-        	<li data-icon="delete"><a href="#" data-rel="close">Close</a></li>
-        	<li data-role="list-divider">Menu</li>
-        	<li data-icon="back"><a href="#demo-intro" data-rel="back">Demo intro</a></li>
-        </ul>
+        <div data-role="collapsible" data-inset="false" data-iconpos="right" data-theme="b" data-content-theme="b">
 
-        <div data-role="collapsible" data-inset="false" data-iconpos="right" data-theme="d" data-content-theme="d">
-
-          <h3>Categories</h3>
-
-          <div data-role="collapsible-set" data-inset="false" data-iconpos="right" data-theme="b" data-content-theme="d">
-
-            <div data-role="collapsible">
-
-              <h3>Bikes</h3>
+          <h3>客服概览</h3>
 
               <ul data-role="listview">
-                <li><a href="#">Road</a></li>
-                <li><a href="#">ATB</a></li>
-                <li><a href="#">Fixed Gear</a></li>
-                <li><a href="#">Cruiser</a></li>
+                <li><a href="#">高级客房</a></li>
+                <li><a href="#">商务客房</a></li>
+                <li><a href="#">豪华客房</a></li>
+                <li><a href="#">行政贵宾房</a></li>
+                <li><a href="#">公寓套房</a></li>
+                <li><a href="#">豪华套房</a></li>
+                <li><a href="#">总统套房</a></li>
               </ul>
-
             </div><!-- /collapsible -->
+            
+       <div data-role="collapsible" data-inset="false" data-iconpos="right" data-theme="b" data-content-theme="b">
 
-            <div data-role="collapsible">
-
-              <h3>Cars</h3>
+          <h3>设施及服务</h3>
 
               <ul data-role="listview">
-                <li><a href="#">SUV</a></li>
-                <li><a href="#">Sport</a></li>
-                <li><a href="#">Convertible</a></li>
+                <li><a href="#">商务服务与设施</a></li>
+                <li><a href="#">儿童设施与服务</a></li>
+                <li><a href="#">宾客设施与服务</a></li>
+                <li><a href="#">运动休闲</a></li>
               </ul>
-
             </div><!-- /collapsible -->
+            
+       <div data-role="collapsible" data-inset="false" data-iconpos="right" data-theme="b" data-content-theme="b">
 
-            <div data-role="collapsible">
-
-              <h3>Boats</h3>
+          <h3>餐饮</h3>
 
               <ul data-role="listview">
-                <li><a href="#">Runabout</a></li>
-                <li><a href="#">Motorboat</a></li>
-                <li><a href="#">Sailboat</a></li>
-                </li>
+                <li><a href="#">海景咖啡厅</a></li>
+                <li><a href="#">龙苑中餐厅</a></li>
+                <li><a href="#">波多菲诺意大利餐厅</a></li>
+                <li><a href="#">樱花日本餐厅</a></li>
+                <li><a href="#">大堂酒吧</a></li>
+                <li><a href="#">好莱坞酒吧</a></li>
               </ul>
-
             </div><!-- /collapsible -->
+            
+         <div data-role="collapsible" data-inset="false" data-iconpos="right" data-theme="b" data-content-theme="b">
 
-		  </div><!-- /collapsible-set -->
+          <h3>会议及宴会</h3>
 
-  		</div><!-- /collapsible -->
-
+              <ul data-role="listview">
+                <li><a href="#">会议</a></li>
+                <li><a href="#">公司活动</a></li>
+                <li><a href="#">婚宴</a></li>
+                <li><a href="#">社交活动</a></li>
+                <li><a href="#">活动场所</a></li>
+              </ul>
+            </div><!-- /collapsible -->
     </div><!-- /panel -->
     
         <div data-role="panel" id="right-panel" data-display="overlay" data-position="right" data-theme="c">
