@@ -279,6 +279,13 @@
 			<li>（酒店大堂）</li>
 		</ul>
 	</div>
+	
+	<div class="list info tu">
+    <span class="hTitle">♀ 酒店地图</span>
+    <ul>
+        <li><img src="http://api.map.baidu.com/staticimage?width=220&amp;height=200&amp;center=118.089061,24.457028&amp;markers=118.089061,24.457028&amp;zoom=14"></li>
+    </ul>
+</div>
 
 	<div class="list info zhoubian">
 		<span class="hTitle">∷ 酒店周边</span>
@@ -288,6 +295,18 @@
 			<li>厦门国际会展中心<span>(距离 15 公里)</span><br>
 			<hr></li>
 			<li>厦门高崎机场<span>(距离 18 公里,乘坐出租车约25分钟到达酒店)</span><br>
+			<hr></li>
+		</ul>
+	</div>
+	
+	<div class="list info">
+		<span class="hTitle">☎ 联系我们</span>
+		<ul>
+			<li>客服电话： +86 592 202 3333<br>
+			<hr></li>
+			<li> 传   真  ： +86 592 203 6666<br>
+			<hr></li>
+			<li> 传   真  ： +86 592 203 6666<br>
 			<hr></li>
 		</ul>
 	</div>
