@@ -6,12 +6,9 @@
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css"/>
-    	<link rel="stylesheet" href="./css/jqm-demos.css">
-    	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
-<script  src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-<script type="javascript" src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
-    
+   <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.css">
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+ <script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
     
     <style>
 		/* Adjust the width of the left reveal menu.
@@ -77,7 +74,7 @@
 		This class will be added to the content wrapper, while the page itself gets the same background
 		as the panel before opening the panel. */
 		#demo-page .ui-body-d {
-			background-image: url(../../_assets/img/bg-pattern.png);
+			background-image: url(./img/bg-pattern.png);
 			background-repeat: repeat-x;
 			background-position: left bottom;
 		}
@@ -138,7 +135,7 @@
     <div data-role="content">
 
     	<div class="article">
-    		<p><img src="../../_assets/img/bike.jpg" alt="Fixed Gear bike"></p>
+    		<p></p>
 
             <h2>Fixed Gear</h2>
 
