@@ -52,6 +52,12 @@ function book(rid) {
 	getLocal("xyk_zj", rid, 1);
 }
 
+
+function cancelBook(rid) {
+	$$("book_"+rid).style.display = "none";
+	$$("ding_"+rid).style.display = "";
+}
+
 //提交订单
 var tijiao = "";
 function submitBook(rid,pid) {

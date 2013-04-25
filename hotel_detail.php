@@ -96,6 +96,7 @@
 
 				<p id="tijiao_484376">
 					<a class="button ding d9d" onclick="submitBook(484376,222039)">提交订单</a>
+					<a class="button ding d9d" onclick="cancelBook(484376)">取消</a>
 				</p></li>
 			<hr>
 		</ul>
@@ -167,6 +168,7 @@
 
 				<p id="tijiao_484377">
 					<a class="button ding d9d" onclick="submitBook(484377,222039)">提交订单</a>
+					<a class="button ding d9d" onclick="cancelBook(484377)">取消</a>
 				</p></li>
 			<hr>
 		</ul>
@@ -183,7 +185,7 @@
 			</li>
 			<li id="ding_484378"><a class="button ding d9d"
 				onclick="book(484378)">预订</a></li>
-			<li class="book" id="book_484377" style="display: none;"><p class="h">价格明细:</p>
+			<li class="book" id="book_484378" style="display: none;"><p class="h">价格明细:</p>
 				<p>2013-04-24 - 1400元</p>
 				<p class="h">合计房费: 1400元（前台支付费用）</p>
 				<p>
@@ -238,6 +240,7 @@
 
 				<p id="tijiao_484377">
 					<a class="button ding d9d" onclick="submitBook(484378,222039)">提交订单</a>
+					<a class="button ding d9d" onclick="cancelBook(484378)">取消</a>
 				</p></li>
 			<hr>
 		</ul>
@@ -302,11 +305,11 @@
 	<div class="list info">
 		<span class="hTitle">☎ 联系我们</span>
 		<ul>
-			<li>客服电话： +86 592 202 3333<br>
+			<li>客服电话：   <a href="tel:05922023333">0592-2023333</a><span></span> <br>
 			<hr></li>
 			<li> 传   真  ： +86 592 203 6666<br>
 			<hr></li>
-			<li> 传   真  ： +86 592 203 6666<br>
+			<li> 邮箱  ：<a href="mailto:haijinme@qq.com">bc@millenniumxiamen.com</a>  <br>
 			<hr></li>
 		</ul>
 	</div>
