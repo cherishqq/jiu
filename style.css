@@ -311,3 +311,15 @@ a:hover {
 	width: 100px;
 	margin: 10px 25px 0;
 }
+
+.bluetip {
+	background: #31a9e9;
+	color: #fff;
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	margin-left: -15px;
+	margin-top: -15px;
+	margin-bottom: 10px
+}

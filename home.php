@@ -122,6 +122,49 @@
 			}
 		}
 	</style>
+	
+	<script >
+		$(document).ready(function(){
+
+
+
+			$("#kf_btn").bind("click",function(){
+				$('#content_container').load("hotel_detail.php");
+			});
+
+			$('#cater_btn').bind('click',function(){
+				$('#content_container').load("canyin.php");
+				// $('#content_container').load("canyin.php");
+			//	$.mobile.loadPage( "canyin.php", 'pageContainer':$('#content_container') );
+				//$('#demo-page2').trigger('pagecreate');
+			//	$.mobile.changePage("canyin.php", {'pageContainer':$('#content_container')});
+
+				});
+			
+			/*
+			$.mobile.loadPage("./about.html",{
+				pageContainer: $('#home_content'),
+				role : 'page',
+				reload : true
+				
+			});
+			*/
+			/**
+			$.mobile.changePage('about.html',{
+	            'pageContainer' : $('#content_container'),
+	            'role' : 'content'
+	        });
+	        **/
+
+		//	$.mobile.loadPage('about.html',{'pageContainer':$('#content_container')});
+
+	//		$('#content_container').load("about.html");	
+	    });
+			
+			// $('#home_content').load("./about.html");
+		
+	
+	</script>
 
 </head>
 <body>
@@ -132,69 +175,40 @@
         <a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
     </div><!-- /header -->
 
-    <div data-role="content">
+    <div data-role="content"  id="content_container"> 
 
-    	<div class="article">
     		
-		</div><!-- /article -->
+    	<!-- 	<ul data-role="listview"  data-filter="true" data-theme="c">
+        	<li><a href="#">
+        		<img src="/img/bg-pattern.png">
+
+                <p class="ui-li-aside">海景咖啡厅</p>
+            </a></li>
+        	<li><a href="#">
+            	
+               <p class="ui-li-aside">海景咖啡厅</p>
+            </a></li>
+        	<li><a href="#">
+            	<h2>WP 7.8</h2>
+                <p>Nokia rolls out WP 7.8 to Lumia 800</p>
+                <p class="ui-li-aside">Windows Phone</p>
+            </a></li>
+
+        </ul>
+    		 -->
 
     </div><!-- /content -->
     
-    <div data-role="panel" id="left-panel" data-theme="b">
+    <div data-role="panel" id="left-panel" data-theme="d">
+     	
+     	   <ul data-role="listview" data-theme="d">
+                <li><a href="#left-panel" id="kf_btn">客房概览</a></li>
+                <li><a href="#left-panel" id="ss_btn">设施及服务</a></li>
+                <li><a href="#left-panel" id="cater_btn" data-prefetch="ture">餐饮</a></li>
+                <li><a href="#left-panel">会议及宴会</a></li>
+         </ul> 
+    
 
-        <div data-role="collapsible" data-inset="false" data-iconpos="right" data-theme="b" data-content-theme="b">
-
-          <h3>客服概览</h3>
-
-              <ul data-role="listview">
-                <li><a href="#">高级客房</a></li>
-                <li><a href="#">商务客房</a></li>
-                <li><a href="#">豪华客房</a></li>
-                <li><a href="#">行政贵宾房</a></li>
-                <li><a href="#">公寓套房</a></li>
-                <li><a href="#">豪华套房</a></li>
-                <li><a href="#">总统套房</a></li>
-              </ul>
-            </div><!-- /collapsible -->
-            
-       <div data-role="collapsible" data-inset="false" data-iconpos="right" data-theme="b" data-content-theme="b">
-
-          <h3>设施及服务</h3>
-
-              <ul data-role="listview">
-                <li><a href="#">商务服务与设施</a></li>
-                <li><a href="#">儿童设施与服务</a></li>
-                <li><a href="#">宾客设施与服务</a></li>
-                <li><a href="#">运动休闲</a></li>
-              </ul>
-            </div><!-- /collapsible -->
-            
-       <div data-role="collapsible" data-inset="false" data-iconpos="right" data-theme="b" data-content-theme="b">
-
-          <h3>餐饮</h3>
-
-              <ul data-role="listview">
-                <li><a href="#">海景咖啡厅</a></li>
-                <li><a href="#">龙苑中餐厅</a></li>
-                <li><a href="#">波多菲诺意大利餐厅</a></li>
-                <li><a href="#">樱花日本餐厅</a></li>
-                <li><a href="#">大堂酒吧</a></li>
-                <li><a href="#">好莱坞酒吧</a></li>
-              </ul>
-            </div><!-- /collapsible -->
-            
-         <div data-role="collapsible" data-inset="false" data-iconpos="right" data-theme="b" data-content-theme="b">
-
-          <h3>会议及宴会</h3>
-
-              <ul data-role="listview">
-                <li><a href="#">会议</a></li>
-                <li><a href="#">公司活动</a></li>
-                <li><a href="#">婚宴</a></li>
-                <li><a href="#">社交活动</a></li>
-                <li><a href="#">活动场所</a></li>
-              </ul>
-            </div><!-- /collapsible -->
     </div><!-- /panel -->
     
         <div data-role="panel" id="right-panel" data-display="overlay" data-position="right" data-theme="c">
@@ -211,6 +225,7 @@
     </div><!-- /panel -->
     
     </div>
+    
     
    </body>
    </html>
