@@ -10,9 +10,23 @@
 <meta name="viewport"
 	content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;" />
 <title>餐厅详情</title>
+<script  src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 <!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css"/>
 <script  src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 <script type="javascript" src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script> -->
+
+<script>
+	function canyin_detail(rid ) {
+
+		alert($("#book_484376").html());
+		
+		$("#book_484376").style.display = "";
+		$("#ding_484376").style.display = "none";
+	//		$("#book_"+rid).style.display = "";
+		//	$("#ding_"+rid).style.display = "none";
+		}
+
+</script>
 
 </head>
 <body>
@@ -26,19 +40,12 @@
 			<li>预订：&nbsp;+ 86 59 2202 3333，分机号 6616</li>
 			<li></li>
 			<li id="ding_484376"><a class="button ding d9d"
-				onclick="book(484376)">详情</a></li>
-			<li class="book" id="book_484376" style="display: none;"><p class="h">价格明细:</p>
-				<p>2013-04-24 - 650元</p>
-				<p class="h">合计房费: 650元（前台支付费用）</p>
-				<p>
-					<label>房间数量</label><input id="fjsl_484376" type="text" value="1">
-				</p>
-				<p>
-					<label>入住人名</label><input id="rzrm_484376" type="text">
-				</p>
-				<p>
-					<label>手机号码</label><input id="sjhm_484376" type="text">
-				</p>
+				onclick="canyin_detail(484376)">详情</a></li>
+			<li class="book" id="book_484376" style="display: none;">
+			   
+			   <img
+				src="http://dingcanla-picture.stor.sinaapp.com/%E5%85%AC%E5%AF%93%E5%A5%97%E6%88%BF.jpg">
+			
 				</li>
 			<hr>
 		</ul>
