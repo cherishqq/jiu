@@ -171,7 +171,7 @@ eot;
         if (!is_array($arg))
         {
          $ret = $this->replyText($arg);
-        }      
+        }
         elseif(array_key_exists("murl",$arg))
         {
             $ret = $this->replyMusic($arg);
