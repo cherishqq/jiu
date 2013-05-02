@@ -1,0 +1,8 @@
+<xml>
+    <ToUserName><![CDATA[haijin]]></ToUserName>
+    <FromUserName><![CDATA[haijin]]></FromUserName>
+    <CreateTime>1367480936</CreateTime>
+    <MsgType><![CDATA[text]]></MsgType>
+    <Content><![CDATA[你好,我是七天连锁酒店。很高兴为您服务。7天连锁酒店秉承让顾客“天天睡好觉”的愿景，以直销低价模式，快乐自主的服务理念，致力为会员提供干净、舒适、快乐的住宿环境和氛围，满足客户的核心住宿需求。客户热线:4008740087]]></Content>
+    <FuncFlag>0</FuncFlag>
+</xml>
