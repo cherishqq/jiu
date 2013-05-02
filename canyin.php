@@ -17,13 +17,29 @@
 
 <script>
 	function canyin_detail(rid ) {
-
-		alert($("#book_484376").html());
 		
-		$("#book_484376").style.display = "";
-		$("#ding_484376").style.display = "none";
+//		document.getElementById("book_484376").style.display = "";
+	//	document.getElementById("ding_484376").style.display = "none";
+	//	$("#book_484376").css('display',''); 
+	//	$("#ding_484376").css('display','none'); 
+
+		if($('#book_' + rid).css('display') == 'none'){
+
+			$('#book_' + rid).show("slow");
+			$("#ding_" + rid).hide();
+			}
+		
 	//		$("#book_"+rid).style.display = "";
 		//	$("#ding_"+rid).style.display = "none";
+		}
+
+	function canyin_hidden(rid) {
+
+		if($('#ding_' + rid).css('display') == 'none'){ 
+			   $('#book_' + rid).hide();
+			   $('#ding_' + rid).show(); 
+			}
+					
 		}
 
 </script>
@@ -37,119 +53,81 @@
 		<ul>
 			<li><h2>海景咖啡厅</h2></li>
 			<li>营业时间 ：&nbsp; 24小时</li>
-			<li>预订：&nbsp;+ 86 59 2202 3333，分机号 6616</li>
+			<li>预订：&nbsp;  <a href="tel:05922023333">0592-2023333</a> 分机号 6616</li>
 			<li></li>
 			<li id="ding_484376"><a class="button ding d9d"
 				onclick="canyin_detail(484376)">详情</a></li>
-			<li class="book" id="book_484376" style="display: none;">
+			<li class="book" id="book_484376" style="display: none;" onclick="canyin_hidden(484376)">
+			   <div style="color: #09f">
+			   		 厦门海景咖啡厅拥有美食品种丰富的自选菜单及其精选豪华自助早餐、午餐及晚餐。 这间厦门酒店餐厅环境优雅，可为您带来愉悦的用餐体验。 
+			   </div>
 			   
-			   <img
+			   
+			   <img id=""
 				src="http://dingcanla-picture.stor.sinaapp.com/%E5%85%AC%E5%AF%93%E5%A5%97%E6%88%BF.jpg">
-			
+
 				</li>
 			<hr>
 		</ul>
 		<ul>
 			<li><h2>龙苑中餐厅</h2></li>
-			<li>早餐：&nbsp;有</li>
-			<li>床型：&nbsp;双人(1.2米)</li>
-			<li>面积：&nbsp;30平方米</li>
-			<li>宽带：&nbsp;免费</li>
-			<li>卫浴：&nbsp;独立卫浴</li>
-			<li>楼层：&nbsp;19-22层</li>
-			<li></li>
-			<li>门店：￥988 (天), 现订：￥<em>900</em> (天)
+			<li>营业时间 ：&nbsp; 周一至周日
+				<p>&nbsp;&nbsp;&nbsp;午餐：中午 11:30 至下午 2:00 </p>
+				<p>&nbsp;&nbsp;&nbsp;晚餐：下午 6:00 至晚上 10:00</p>
+				
 			</li>
+			<li>预订：&nbsp;  <a href="tel:05922023333">0592-2023333</a> 分机号 6616</li>
+			<li></li>
 			<li id="ding_484377"><a class="button ding d9d"
-				onclick="book(484377)">详情</a></li>
+				onclick="canyin_detail(484377)">详情</a></li>
+			<li class="book" id="book_484377" style="display: none;" onclick="canyin_hidden(484377)">
+			   
+			   <div style="color: #09f">
+			   		 龙苑中餐厅是您在厦门一流中餐厅畅享美食体验的理想之选。 龙苑中餐厅可为您供应品种丰富、富有创意的美味粤式菜肴，确保让您大饱口福。
+			   </div>
+			   <img 
+				src="http://dingcanla-picture.stor.sinaapp.com/%E9%BE%99%E8%8B%91%E4%B8%AD%E9%A4%90%E5%8E%85.jpg">
 
+				</li>
 			<hr>
 		</ul>
 		<ul>
 			<li><h2>波多菲诺意大利餐厅</h2></li>
-			<li>早餐：&nbsp;双份</li>
-			<li>床型：&nbsp;大床(2.0米)</li>
-			<li>面积：&nbsp;60平方米</li>
-			<li>宽带：&nbsp;免费</li>
-			<li>卫浴：&nbsp;独立卫浴</li>
-			<li>楼层：&nbsp;17-22层</li>
-			<li></li>
-			<li>门店：￥1488 (天), 现订：￥<em>1400</em> (天)
+			<li>营业时间 ：&nbsp; 中午 11:30 - 下午 2:00 以及下午 6:00 - 晚上 10:00	
 			</li>
+			<li>预订：&nbsp;  <a href="tel:05922023333">0592-2023333</a> 分机号 6616</li>
+			<li></li>
 			<li id="ding_484378"><a class="button ding d9d"
-				onclick="book(484378)">详情</a></li>
-			<li class="book" id="book_484378" style="display: none;"><p class="h">价格明细:</p>
-				<p>2013-04-24 - 1400元</p>
-				<p class="h">合计房费: 1400元（前台支付费用）</p>
-				<p>
-					<label>房间数量</label><input id="fjsl_484378" type="text" value="1">
-				</p>
-				<p>
-					<label>入住人名</label><input id="rzrm_484378" type="text">
-				</p>
-				<p>
-					<label>手机号码</label><input id="sjhm_484378" type="text">
-				</p>
-				<p>
-					<label>入住日期</label> <select id="rz_484378" selectedindex="0"><option
-							value="2013-04-24">2013年04月24日（星期三）</option>
-						<option value="2013-04-25">2013年04月25日（星期四）</option>
-						<option value="2013-04-26">2013年04月26日（星期五）</option>
-						<option value="2013-04-27">2013年04月27日（星期六）</option>
-						<option value="2013-04-28">2013年04月28日（星期日）</option>
-						<option value="2013-04-29">2013年04月29日（星期一）</option>
-						<option value="2013-04-30">2013年04月30日（星期二）</option>
-						<option value="2013-05-01">2013年05月01日（星期三）</option>
-						<option value="2013-05-02">2013年05月02日（星期四）</option>
-						<option value="2013-05-03">2013年05月03日（星期五）</option></select>
-				</p>
-				<p>
-					<label>离开日期</label> <select id="lk_484378" selectedindex="0"><option
-							value="2013-04-25">2013年04月25日（星期四）</option>
-						<option value="2013-04-26">2013年04月26日（星期五）</option>
-						<option value="2013-04-27">2013年04月27日（星期六）</option>
-						<option value="2013-04-28">2013年04月28日（星期日）</option>
-						<option value="2013-04-29">2013年04月29日（星期一）</option>
-						<option value="2013-04-30">2013年04月30日（星期二）</option>
-						<option value="2013-05-01">2013年05月01日（星期三）</option>
-						<option value="2013-05-02">2013年05月02日（星期四）</option>
-						<option value="2013-05-03">2013年05月03日（星期五）</option>
-						<option value="2013-05-04">2013年05月04日（星期六）</option></select>
-				</p>
-				<p>
-					<label>最晚到店</label> <select id="zwdd_484378" selectedindex="0">
-						<option value="8:00">早上8:00之前</option>
-						<option value="10:00">10:00</option>
-						<option value="12:00">12:00</option>
-						<option value="14:00">14:00</option>
-						<option value="16:00" selected="">16:00</option>
-						<option value="18:00">18:00</option>
-						<option value="20:00">20:00</option>
-						<option value="22:00">22:00</option>
-						<option value="24:00">00:00</option>
-						<option value="26:00">晚上00:00之后</option>
-					</select>
-				</p>
+				onclick="canyin_detail(484378)">详情</a></li>
+			<li class="book" id="book_484378" style="display: none;" onclick="canyin_hidden(484378)">
+			   
+			    <div style="color: #09f">
+			   		波多菲诺意大利餐厅是一家供应意式料理的最正宗的厦门餐厅，久负盛名，可为您提供各种地道的意大利美食
+			   </div>
+			   <img 
+				src="http://dingcanla-picture.stor.sinaapp.com/%E6%B3%A2%E5%A4%9A%E8%8F%B2%E8%AF%BA%E6%84%8F%E5%A4%A7%E5%88%A9%E9%A4%90%E5%8E%85.jpg">
 
-				<p id="tijiao_484377">
-					<a class="button ding d9d" onclick="submitBook(484378,222039)">提交订单</a>
-					<a class="button ding d9d" onclick="cancelBook(484378)">取消</a>
-				</p></li>
+				</li>
 			<hr>
 		</ul>
 		<ul>
 			<li><h2>樱花日本餐厅</h2></li>
-			<li>宽带：&nbsp;</li>
-			<li>早餐：&nbsp;双份</li>
-			<li>床型：&nbsp;大床(2.0米)</li>
-			<li>面积：&nbsp;60平方米</li>
-			<li>宽带：&nbsp;免费</li>
-			<li>卫浴：&nbsp;独立卫浴</li>
-			<li>楼层：&nbsp;17-22层</li>
+			<li>营业时间 ：&nbsp; 下午 6:00 至晚上 10:00 </li>
+			<li>预订：&nbsp;  <a href="tel:05922023333">0592-2023333</a> 分机号 6616</li>
 			<li></li>
-			<li>门店：￥1288 (天), 现订：￥<em>1200</em> (天)
-			</li>
-			<li><a class="button ding">订完</a></li>
+			<li id="ding_484379"><a class="button ding d9d"
+				onclick="canyin_detail(484379)">详情</a></li>
+			<li class="book" id="book_484379" style="display: none;" onclick="canyin_hidden(484379)">
+			   
+			   <div style="color: #09f">
+			   		这间厦门日本餐厅可为您奉上各种现代化美味佳肴，可确保客人在舒适时尚的环境中获得愉悦的餐饮体验。
+			   </div>
+			   
+			   <img 
+				src="http://dingcanla-picture.stor.sinaapp.com/%E6%A8%B1%E8%8A%B1%E6%97%A5%E6%9C%AC%E9%A4%90%E5%8E%85.jpg">
+
+				</li>
+			<hr>
 		</ul>
 	</div>
 
