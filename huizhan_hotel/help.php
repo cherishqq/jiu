@@ -14,20 +14,36 @@
   	<div data-role="content" class="jqm-content">
 		<h1>帮助</h1>
 
-		<p class="jqm-intro">This section explores how you can customize, extend, re-style and take full advantage of jQuery Mobile.</p>
-
-		<ul data-role="listview" data-inset="true" data-filter="true" data-theme="d" data-divider-theme="d" data-icon="false" data-filter-placeholder="Search demos..." data-global-nav="demos" class="jqm-list">
+		<ul data-role="listview" data-inset="true"  data-theme="d" data-divider-theme="d" data-icon="false"  class="jqm-list">
         	<li data-role="list-divider">在线客服</li>
-			<li data-section="Demo Showcase" data-filtertext="dynamic collapsible set accordion append expand">
-				<a href="examples/collapsibles/dynamic-collapsible.php" data-ajax="false">酒店预订</a>
+			<li >
+				<span>酒店预订</span>
 			</li>
-			<li data-section="Demo Showcase" data-filtertext="dynamic collapsible set accordion append expand">
-				<a href="examples/collapsibles/dynamic-collapsible.php" data-ajax="false">酒店主页</a>
+			<li >
+				<span>酒店主页</span>
 			</li>
-        	<li data-section="Demo Showcase" data-filtertext="dynamic collapsible set accordion append expand">
-				<a href="examples/collapsibles/dynamic-collapsible.php" data-ajax="false">优惠信息查询</a>
+        	<li >
+				<span>优惠信息查询</span>
 			</li>
-        	
+			<li >
+				<span>分店位置查询</span>
+			</li>
+			<li >
+				<span>联系方式</span>
+			</li>
+			<li data-role="list-divider">智能聊天</li>
+			 <li >
+				<span>点歌</span>
+			</li>
+			<li >
+				<span>查询天气</span>
+			</li>
+			<li >
+				<span>查询空气质量</span>
+			</li>
+			<li >
+				<span>我想你猜</span>
+			</li>
 		</ul>
 
 	</div>
