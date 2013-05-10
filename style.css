@@ -40,7 +40,7 @@ strong, b {
 
 /* Public */
 body {
-	font-size: 12px;
+	font-size: 13px;
 	color: #630;
 	font-family: "Microsoft YaHei",Tahoma, Arial;
 	padding: 22px;
@@ -322,4 +322,48 @@ a:hover {
 	margin-left: -15px;
 	margin-top: -15px;
 	margin-bottom: 10px
+}
+
+.index-list {
+margin-bottom: -2px;
+overflow: hidden;
+}
+
+.index-list .item {
+border-bottom: 1px solid #aba8a2;
+display: block;
+padding: 10px;
+
+background-color : #FFF;
+position: relative;
+padding-left: 108px;
+height: 85px;
+}
+
+.pic-box {
+position: absolute;
+left: 10px;
+border: 1px solid #EEE;
+background-color: #fff;
+padding: 3px;
+-webkit-box-shadow: 1px 1px 2px #CCC;
+box-shadow: 1px 1px 2px #CCC;
+}
+
+.index-list .sub-icon {
+background-position: -125px 0;
+display: block;
+width: 40px;
+height: 40px;
+position: absolute;
+left: 0;
+top: -1px;
+text-indent: -999em;
+background-size: 210px auto;
+background-image: url(http://dingcanla-picture.stor.sinaapp.com/huizhan/process.png);
+background-repeat: no-repeat;
+}
+
+.index-list .yuyue {
+background-position: -73px -54px;
 }
