@@ -1,0 +1,186 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=0.8">
+<title>抽奖</title>
+<link href="../style.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+.demo{width:417px; height:417px; position:relative; margin:5px auto}
+#disk{width:417px; height:417px; background:url(disk.gif) no-repeat}
+#start{width:163px; height:320px; position:absolute; top:46px; left:130px;}
+#start img{cursor:pointer}
+
+
+
+*{margin:0;padding:0;list-style-type:none;}
+
+a,img{border:0;}
+a{color:#5e5e5e;text-decoration:none;}
+a:hover{color:#3366cc;text-decoration:underline;}
+/* box */
+.box{position:absolute;width:100%;height:60%;z-index:100;background-color:#fff;border:1px #8FA4F5 solid;padding:1px; }
+.box h2{height:25px;font-size:14px;background-color:#3366cc;position:relative;padding-left:10px;line-height:25px;color:#fff;}
+.box h2 a{position:absolute;right:5px;font-size:12px;color:#fff;}
+.box .mainlist{padding:10px;}
+.box .mainlist li{height:24px;line-height:24px;}
+.box .mainlist li span{margin:0 5px 0 0;font-family:"宋体";font-size:12px;font-weight:400;color:#ddd;}
+#TB_overlayBG{background-color:#666;position:absolute;z-index:99;left:0;top:0;display:none;width:100%;height:100%;opacity:0.5;filter: alpha(opacity=50);-moz-opacity: 0.5;}
+
+
+</style>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="jQueryRotate.2.2.js"></script>
+<script type="text/javascript" src="jquery.easing.min.js"></script>
+<script type="text/javascript">
+$(document).ready( function() {
+
+
+	$(function(){
+		
+		$(".s").click(function(){
+			$("#TB_overlayBG").css({
+				display:"block",height:$(document).height()
+			});
+			$(".box").css({
+				//	left:($("body").width()-$(".box").width())/2-20+"px",
+				//	left: 20 + "px",
+				//	top:($(window).height()-$(".box").height())/2+$(window).scrollTop()+"px",
+				display:"block"
+			});
+		});
+		
+		$(".close").click(function(){
+			$("#TB_overlayBG").css("display","none");
+			$(".box ").css("display","none");
+		});
+		
+	})
+
+	
+	
+$(function(){ 
+     $("#startbtn").click(function(){ 
+        lottery(); 
+    }); 
+}); 
+function lottery(){ 
+    $.ajax({ 
+        type: 'POST', 
+        url: 'data.php', 
+        dataType: 'json', 
+        cache: false, 
+        error: function(){ 
+            alert('出错了！'); 
+            return false; 
+        }, 
+        success:function(json){ 
+         //   $("#startbtn").unbind('click').css("cursor","default"); 
+            var a = json.angle; //角度 
+            var p = json.prize; //奖项 
+            $("#startbtn").rotate({ 
+                duration:3000, //转动时间 
+                angle: 0, 
+                animateTo:1800+a, //转动角度 
+                easing: $.easing.easeOutSine, 
+                callback: function(){ 
+                	
+        			$("#TB_overlayBG").css({
+        				display:"block",height:$(document).height()
+        			});
+        			$(".box").css({
+        				left:($("body").width()-$(".box").width())/2-20+"px",
+        				top:($(window).height()-$(".box").height())/2+$(window).scrollTop()+"px",
+        				display:"block"
+        			});
+                //	loadPopupBox();
+                	
+                } 
+            }); 
+        } 
+    }); 
+} 
+
+});
+
+</script>
+</head>
+
+<body>
+
+<div id="TB_overlayBG" style="display: none; height: 629px;" class="broke-endless-pages"></div>
+
+<div id="main">
+
+   <div class="msg"></div>
+   <div class="demo">
+        <div id="disk"></div>
+        <div id="start"><img src="start.png" id="startbtn"></div>
+   </div>
+   <div class="ad_demo"><script src="/js/ad_js/ad_demo.js" type="text/javascript"></script></div><br/>
+</div>
+
+
+<!-- Baidu Button BEGIN -->
+<!-- 
+<div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare" data="{text:'hehe'}">
+<span class="bds_more">分享到：</span>
+<a class="bds_qzone"></a>
+<a class="bds_tsina"></a>
+<a class="bds_tqq"></a>
+<a class="bds_renren"></a>
+<a class="bds_t163"></a>
+<a class="shareCount"></a>
+</div>
+<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=1369289" ></script>
+<script type="text/javascript" id="bdshell_js"></script>
+<script type="text/javascript">
+document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+</script>
+<!-- Baidu Button END -->
+
+<!-- <p id="stat"><script type="text/javascript" src="http://js.tongji.linezing.com/1870888/tongji.js"></script></p>
+ -->	<div class="list info zhoubian">
+		<span class="hTitle">∷ 奖品</span>
+		<ul>
+			<li>一等奖: ipad 一台</span><br><hr></li>
+			<li>二等奖: mp3</span><br><hr></li>
+			<li>三等奖: 优惠住店打八折</span><br><hr></li>
+			<li>四等奖: 优惠券</span><br><hr></li>
+			
+		</ul>
+	</div>
+	
+	
+	<div class="box" style="display: none; left: 30px; top: 100px;">
+		<h2> 中奖啦 </h2>
+		<div class="mainlist">
+			
+		</div>
+		<a href="#" class="close">关闭</a>
+	</div>
+	
+	
+	<!-- <div id="popup_box">	OUR PopupBox DIV
+	<h1>恭喜您,您获得了</h1> -->
+	<!-- Baidu Button BEGIN -->
+
+<div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare" data="{text:'hehe'}">
+<span class="bds_more">分享到：</span>
+<a class="bds_qzone"></a>
+<a class="bds_tsina"></a>
+<a class="bds_tqq"></a>
+<a class="bds_renren"></a>
+<a class="bds_t163"></a>
+<a class="shareCount"></a>
+</div>
+<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=1369289" ></script>
+<script type="text/javascript" id="bdshell_js"></script>
+<script type="text/javascript">
+document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+</script>
+<!-- Baidu Button END -->
+
+
+</body>
+</html>
