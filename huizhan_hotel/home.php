@@ -9,8 +9,9 @@
   <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.css">
  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
  <script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
+ <link href="../style.css" rel="stylesheet" type="text/css" />
     
-    <style>
+    <style type="text/css">
 		/* Adjust the width of the left reveal menu.
 		Copy all CSS from jquery.mobile.panel.css and delete the properties other than width, left, right and transform.
 		Then delete the selectors/rules for display modes (reveal/push/overlay) and the position (left/right) that you don't use.
@@ -145,7 +146,22 @@
 			$('#privilege_btn').bind('click',function(){
 				$('#content_container').load("privilege.php");
 				});
-			
+
+			function hotel_detail(rid) {
+				alert("dd");
+				if($('#book_' + rid).css('display') == 'none'){
+
+					$('#book_' + rid).show("slow");
+					$("#ding_" + rid).hide();
+					}
+				}
+
+			function hotel_hidden(rid) {
+				if($('#ding_' + rid).css('display') == 'none'){ 
+					   $('#book_' + rid).hide();
+					   $('#ding_' + rid).show(); 
+					}
+				}
 	    });
 			
 		
@@ -153,15 +169,15 @@
 	</script>
 
 </head>
-<body>
-<div data-role="page" id="demo-page" data-theme="b">
+<body >
+<div data-role="page" id="demo-page" data-theme="b" style="background-color: #E0D3C9;">
  	
  	<div data-role="header" data-theme="b">
-        <h1>厦门 国际会议中心酒店</h1>
+        <h1><span style="overflow: visible;">厦门国际会议中心酒店</span></h1>
         <a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
     </div><!-- /header -->
 
-    <div data-role="content"  id="content_container"> 
+    <div data-role="content"  id="content_container" > 
     </div><!-- /content -->
     
     <div data-role="panel" id="left-panel" data-theme="d">

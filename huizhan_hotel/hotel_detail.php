@@ -4,47 +4,38 @@
 <!DOCTYPE html >
 <html>
 <head>
-<link href="../style.css" rel="stylesheet" type="text/css" />
+<title>客房详情</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <meta name="viewport"
 	content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;" />
-<title>客房详情</title>
-<script  src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-<!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css"/>
-<script  src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-<script type="javascript" src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script> -->
-
-<script>
-	function hotel_detail(rid ) {
-		
-		if($('#book_' + rid).css('display') == 'none'){
-
-			$('#book_' + rid).show("slow");
-			$("#ding_" + rid).hide();
-			}
-		
-	//		$("#book_"+rid).style.display = "";
-		//	$("#ding_"+rid).style.display = "none";
-		}
-
-	function hotel_hidden(rid) {
-
-		if($('#ding_' + rid).css('display') == 'none'){ 
-			   $('#book_' + rid).hide();
-			   $('#ding_' + rid).show(); 
-			}
-					
-		}
-
-</script>
+<link href="../style.css" rel="stylesheet" type="text/css" />
+<!--  
+ <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+-->
 
 </head>
 <body>
 
 
 	<div class="list info">
-		<span class="hTitle" style="background-color: #3CF;">  客房详情</span>
+	<script type="text/javascript">
+		function hotel_detail(rid) {
+			if($('#book_' + rid).css('display') == 'none'){
+				$('#book_' + rid).show("slow");
+				$("#ding_" + rid).hide();
+				}
+			}
+	
+		function hotel_hidden(rid) {
+			if($('#ding_' + rid).css('display') == 'none'){ 
+				   $('#book_' + rid).hide();
+				   $('#ding_' + rid).show(); 
+				}
+			}
+	</script>
+
+		<span class="hTitle" style="background: #3CF;">  客房详情</span>
 		<ul>
 			<li><h2>湾景套房</h2></li>
 			<li>面积 ：&nbsp; 73<sup>2</sup></li>
@@ -55,7 +46,7 @@
 			<li>宽带：&nbsp;  有线/无线</li>
 			<li></li>
 			<li id="ding_484376"><a class="button ding d9d"
-				onclick="hotel_detail(484376)">详情</a></li>
+				onclick="hotel_detail('484376')">详情</a></li>
 			<li class="book" id="book_484376" style="display: none;" onclick="hotel_hidden(484376)">
 			   <div style="color: #09f">
 			     详细介绍

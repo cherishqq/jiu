@@ -4,7 +4,9 @@
 <!DOCTYPE html >
 <html>
 <head>
-<link href="../style.css" rel="stylesheet" type="text/css" />
+<!-- 
+<link href="./style.css" rel="stylesheet" type="text/css" />
+ -->
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <meta name="viewport"
@@ -32,6 +34,11 @@
 	 		 <div >
 	 		 	<h3>海风健身中心</h3>
 	 		 </div>
+	 		 
+	 		 <div class="sub-icon new">
+	 		 	
+	 		 </div>
+	 		
 	 		</a>
 	 	</li>
 	 	<li>
@@ -40,6 +47,10 @@
 	 		 <div >
 	 		 	<h3>客房优惠</h3>
 	 		 </div>
+	 		 
+	 		 <div class="sub-icon start">
+	 		 </div>
+	 	
 	 		</a>
 	 	</li> 
 	 </ul>

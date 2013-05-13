@@ -1,11 +1,10 @@
 <?php
 
 ?>
-
 <!DOCTYPE html >
 <html>
 <head>
-<link href="../style.css" rel="stylesheet" type="text/css" />
+
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <meta name="viewport"
@@ -16,6 +15,17 @@
 <script type="javascript" src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script> 
 
 <script src="js/book.js"></script>
+
+<link href="style.css" rel="stylesheet" type="text/css" />
+
+
+
+ 
+<style type="text/css">
+
+  @import url(./style.css);
+
+</style>
 -->
 
 <script>
@@ -31,7 +41,7 @@ $(document).ready(function(){
 
 
 	<div class="list info">
-		<span class="hTitle">☞厦门 国际会议中心酒店</span>
+		<span class="hTitle">☞厦门国际会议中心酒店</span>
 		<ul>
 			<li>星级：五星级</li>
 			<li>地址：思明区环岛东路1697号(紧邻国际会议中心、环岛路，面朝大海)</li>
