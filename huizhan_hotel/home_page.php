@@ -8,7 +8,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <meta name="viewport"
-	content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;" />
+	content="width=device-width,height=device-height,inital-scale=1.0,user-scalable=no;" />
 <title>酒店主页</title>
 <!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css"/>
 <script  src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
@@ -53,10 +53,11 @@ $(document).ready(function(){
 	<div class="list info tu">
     <span class="hTitle">♀ 酒店地图</span>
     <ul>
-        <li><img id="hotel_map" src="http://dingcanla-picture.stor.sinaapp.com/huizhan/hotel_map.png"></li>
-   <!--  
+<!--         <li><img id="hotel_map" src="http://dingcanla-picture.stor.sinaapp.com/huizhan/hotel_map.png"></li> -->
+<!--     <li>
+      <img id="hotel_map" src="http://dingcanla-picture.stor.sinaapp.com/huizhan/hotel_around.jpg">
+    </li> -->
    http://api.map.baidu.com/staticimage?width=220&amp;height=200&amp;center=118.196179,24.477976&amp;markers=118.196179,24.477976&amp;zoom=14
-   -->
     </ul>
 	</div>
 	 

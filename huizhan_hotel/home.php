@@ -4,7 +4,8 @@
 <html>
 <head>
 	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=yes">
+    
     
   <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.css">
  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
@@ -143,9 +144,30 @@
 			$('#meeting_room_btn').bind('click',function(){
 				$('#content_container').load("metting_room.php");
 				});
+
+			// 最新优惠
 			$('#privilege_btn').bind('click',function(){
 				$('#content_container').load("privilege.php");
 				});
+			$('#map_btn').bind('click',function(){
+		//		$('#content_container').load("http://map.baidu.com");
+		//		$('#content_container').load("privilege.php");
+
+//				$.get("http://map.baidu.com");
+				$('#content_container').get("map.php");
+				
+			    
+		
+				/**
+				$('#content_container').get("http://map.baidu.com",function(data){
+						alert("data loaded:" + data);
+					});
+				**/
+
+		
+	
+				});
+			
 
 			function hotel_detail(rid) {
 				alert("dd");
@@ -178,6 +200,8 @@
     </div><!-- /header -->
 
     <div data-role="content"  id="content_container" > 
+    
+    <!-- 	<iframe src="http://j.map.baidu.com/jPvfi"></iframe> -->
     </div><!-- /content -->
     
     <div data-role="panel" id="left-panel" data-theme="d">
@@ -189,6 +213,7 @@
                 <li><a href="#left-panel" id="cater_btn" data-prefetch="ture">餐饮</a></li>
                 <li><a href="#left-panel" id="meeting_room_btn">会议及宴会</a></li>
                 <li><a href="#left-panel" id="privilege_btn">最新优惠</a></li>
+                <li><a href="#left-panel" id="map_btn">地图名片</a></li>
          </ul> 
     
 
