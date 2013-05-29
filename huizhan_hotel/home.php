@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.css">
  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
  <script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
+ <script src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
  <link href="../style.css" rel="stylesheet" type="text/css" />
     
     <style type="text/css">
@@ -136,9 +137,16 @@
 			$("#kf_btn").bind("click",function(){
 				$('#content_container').load("hotel_detail.php");
 			});
+			
+			$("#hotel_kf_btn").bind("click",function(){
+				$('#content_container').load("huizhan_hotel_detail.php");
+			});
 
 			$('#cater_btn').bind('click',function(){
 				$('#content_container').load("dining_room.php");
+				});
+			$('#hotel_cater_btn').bind('click',function(){
+				$('#content_container').load("hotel_dining_room.php");
 				});
 
 			$('#meeting_room_btn').bind('click',function(){
@@ -154,7 +162,11 @@
 		//		$('#content_container').load("privilege.php");
 
 //				$.get("http://map.baidu.com");
-				$('#content_container').get("map.php");
+				$('#content_container').load("map.php",function(data){
+						
+						$.getScript("./js/baidumap.js");
+		
+					});
 				
 			    
 		
@@ -199,7 +211,7 @@
         <a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
     </div><!-- /header -->
 
-    <div data-role="content"  id="content_container" > 
+    <div data-role="content"  id="content_container"  style="background-color: #E0D3C9" > 
     
     <!-- 	<iframe src="http://j.map.baidu.com/jPvfi"></iframe> -->
     </div><!-- /content -->
@@ -209,8 +221,10 @@
      	   <ul data-role="listview" data-theme="d">
      	   
                 <li><a href="#left-panel" id="home_btn">主页</a></li>
-                <li><a href="#left-panel" id="kf_btn">客房概览</a></li>
-                <li><a href="#left-panel" id="cater_btn" data-prefetch="ture">餐饮</a></li>
+                <li><a href="#left-panel" id="kf_btn">会议中心酒店客房</a></li>
+                 <li><a href="#left-panel" id="hotel_kf_btn">国际会展酒店客房</a></li>
+                <li><a href="#left-panel" id="cater_btn" data-prefetch="ture">会议中心酒店餐饮</a></li>
+                      <li><a href="#left-panel" id="hotel_cater_btn" data-prefetch="ture">国际会展酒店餐饮</a></li>
                 <li><a href="#left-panel" id="meeting_room_btn">会议及宴会</a></li>
                 <li><a href="#left-panel" id="privilege_btn">最新优惠</a></li>
                 <li><a href="#left-panel" id="map_btn">地图名片</a></li>
