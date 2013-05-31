@@ -15,7 +15,7 @@
 
 
 	<div class="list info">
-		<span class="hTitle" style="background-color: #3CF;"> 餐厅详情</span>
+		<span class="hTitle" style="background-color: #3CF;"> 国际会议中心酒店餐厅详情</span>
 		<ul>
 			<li><h2>彩云全日餐厅</h2></li>
 			<li></li>

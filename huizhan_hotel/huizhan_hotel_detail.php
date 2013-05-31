@@ -35,7 +35,7 @@
 			}
 	</script>
 
-		<span class="hTitle" style="background: #3CF;">  客房详情</span>
+		<span class="hTitle" style="background: #3CF;">国际会展酒店--客房详情</span>
 		<ul>
 			<li><h2>海景客房</h2></li>
 			<li>面积 ：&nbsp; 38m<sup>2</sup></li>

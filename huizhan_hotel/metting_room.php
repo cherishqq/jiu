@@ -21,9 +21,9 @@
 
 
 	<div class="list info">
-		<span class="hTitle" style="background-color: #3CF;"> 会议室详情</span>
+		<span class="hTitle" style="background-color: #3CF;"> 国际会议中心酒店会议室</span>
 		<ul>
-			<li><h2>宴会多功能厅</h2></li>
+			<li><h2>宴会多功能厅</h2><hr></li>
 			<li></li>
 			<li><img style="display: block; width:90%"
 				src="http://dingcanla-picture.stor.sinaapp.com/huizhan/%E5%AE%B4%E4%BC%9A%E5%A4%9A%E5%8A%9F%E8%83%BD%E5%8E%85.jpg">
@@ -40,7 +40,7 @@
 		</ul>
 		
 		<ul>
-			<li><h2>会芳阁</h2></li>
+			<li><h2>会芳阁</h2><hr></li>
 	
 			<li>
 			<img style="display: block; width:90%"
@@ -56,7 +56,7 @@
 		
 		
 	 <ul>
-			<li><h2>宴会多功能厅外廊车展</h2></li>
+			<li><h2>宴会多功能厅外廊车展</h2><hr></li>
 			<li>
 			<img style="display: block; width:90%"
 				src="http://dingcanla-picture.stor.sinaapp.com/huizhan/%E8%BD%A6.jpg">
@@ -69,7 +69,7 @@
 		</ul>
 		
 		 <ul>
-			<li><h2>会议室2</h2></li>
+			<li><h2>会议室2</h2><hr></li>
 			<li>
 			 <img style="display: block; width:90%"
 				src="http://dingcanla-picture.stor.sinaapp.com/huizhan/%E4%BC%9A%E8%AE%AE%E5%AE%A42.jpg">
@@ -82,7 +82,7 @@
 			<hr>
 		</ul>
 		 <ul>
-			<li><h2>会议室3</h2></li>
+			<li><h2>会议室3</h2><hr></li>
 			<li>
 			 <img style="display: block; width:90%"
 				src="http://dingcanla-picture.stor.sinaapp.com/huizhan/%E4%BC%9A%E8%AE%AE%E5%AE%A43.jpg">

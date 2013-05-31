@@ -367,3 +367,9 @@ background-position: -170px 0px;
 .index-list .start {
 background-position: -120px 0px;
 }
+
+.hTitle hr {
+	height: 1px;
+	border: none;
+	border-top: 1px dashed #D8C8BA;
+}

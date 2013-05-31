@@ -20,7 +20,7 @@
 		If you don't use fixed toolbars on your page you can delete those selectors as well.
 		Narrow the scope of the selectors to prevent other panels being affected by the overrides. */
 		#demo-page #left-panel.ui-panel {
-			width: 15em;
+			width: 20em;
 		}
 		#demo-page #left-panel.ui-panel-closed {
 			width: 0;
@@ -152,6 +152,9 @@
 			$('#meeting_room_btn').bind('click',function(){
 				$('#content_container').load("metting_room.php");
 				});
+			$('#huizhan_meeting_room_btn').bind('click',function(){
+				$('#content_container').load("huizhan_metting_room.php");
+				});
 
 			// 最新优惠
 			$('#privilege_btn').bind('click',function(){
@@ -162,8 +165,7 @@
 		//		$('#content_container').load("privilege.php");
 
 //				$.get("http://map.baidu.com");
-				$('#content_container').load("map.php",function(data){
-						
+				$('#content_container').load("map.php",function(data){		
 						$.getScript("./js/baidumap.js");
 		
 					});
@@ -207,7 +209,7 @@
 <div data-role="page" id="demo-page" data-theme="b" style="background-color: #E0D3C9;">
  	
  	<div data-role="header" data-theme="b">
-        <h1><span style="overflow: visible;">厦门国际会议中心酒店</span></h1>
+        <h1><span style="overflow: scroll;">厦门国际会议中心酒店</span></h1>
         <a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
     </div><!-- /header -->
 
@@ -221,11 +223,12 @@
      	   <ul data-role="listview" data-theme="d">
      	   
                 <li><a href="#left-panel" id="home_btn">主页</a></li>
-                <li><a href="#left-panel" id="kf_btn">会议中心酒店客房</a></li>
+                <li><a href="#left-panel" id="kf_btn">国际会议中心酒店客房</a></li>
                  <li><a href="#left-panel" id="hotel_kf_btn">国际会展酒店客房</a></li>
-                <li><a href="#left-panel" id="cater_btn" data-prefetch="ture">会议中心酒店餐饮</a></li>
+                <li><a href="#left-panel" id="cater_btn" data-prefetch="ture">国际会议中心酒店餐饮</a></li>
                       <li><a href="#left-panel" id="hotel_cater_btn" data-prefetch="ture">国际会展酒店餐饮</a></li>
-                <li><a href="#left-panel" id="meeting_room_btn">会议及宴会</a></li>
+                <li><a href="#left-panel" id="meeting_room_btn">国际会议中心酒店会议室</a></li>
+                <li><a href="#left-panel" id="huizhan_meeting_room_btn">国际会展酒店会议室</a></li>
                 <li><a href="#left-panel" id="privilege_btn">最新优惠</a></li>
                 <li><a href="#left-panel" id="map_btn">地图名片</a></li>
          </ul> 

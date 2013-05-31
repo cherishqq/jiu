@@ -50,17 +50,18 @@ $(document).ready(function(){
 		</ul>
 	</div>
    
+   <!--  
 	<div class="list info tu">
     <span class="hTitle">♀ 酒店地图</span>
     <ul>
 <!--         <li><img id="hotel_map" src="http://dingcanla-picture.stor.sinaapp.com/huizhan/hotel_map.png"></li> -->
 <!--     <li>
       <img id="hotel_map" src="http://dingcanla-picture.stor.sinaapp.com/huizhan/hotel_around.jpg">
-    </li> -->
+    </li> 
    http://api.map.baidu.com/staticimage?width=220&amp;height=200&amp;center=118.196179,24.477976&amp;markers=118.196179,24.477976&amp;zoom=14
     </ul>
 	</div>
-	 
+	 -->
 
 	<div class="list info zhoubian">
 		<span class="hTitle">∷ 酒店周边</span>

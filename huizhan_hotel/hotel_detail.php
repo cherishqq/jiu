@@ -35,7 +35,7 @@
 			}
 	</script>
 
-		<span class="hTitle" style="background: #3CF;">  客房详情</span>
+		<span class="hTitle" style="background: #3CF;"> 国际会议中心酒店--客房详情</span>
 		<ul>
 			<li><h2>湾景套房</h2></li>
 			<li>面积 ：&nbsp; 73<sup>2</sup></li>

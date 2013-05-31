@@ -15,10 +15,12 @@
 
 
 	<div class="list info">
-		<span class="hTitle" style="background-color: #3CF;"> 餐厅详情</span>
+	
+		<span class="hTitle" style="background-color: #3CF;">国际会展中心酒店 餐厅详情</span>
 		<ul>
-			<li><h2>鼓浪宴会厅</h2></li>
-			<li>预订热线: 5959777</li>
+			<li><h2>鼓浪宴会厅</h2> <hr></li>
+			
+			<li>预订热线:  <a href="tel:05925959777">5959777</a>  </li>
 			<li><img style="display: block; width:90%"
 				src="./images/鼓浪宴会厅.jpg">
 			</li>
@@ -31,7 +33,7 @@
 		</ul>
 		
 		<ul>
-			<li><h2>丽湾中餐厅</h2></li>
+			<li><h2>丽湾中餐厅</h2><hr></li>
 		   <li> 营业时间: 11:30-- 14:00 / 17:30 -- 22:00</li>
 			<li>
 			<img style="display: block; width:90%"
@@ -47,7 +49,7 @@
 		
 		
 	 <ul>
-			<li><h2>怡海苑自助餐厅</h2></li>
+			<li><h2>怡海苑自助餐厅</h2> <hr></li>
 			<li>早餐价格：每位118元+15%(7:00 - 10:00)</li>
 			<li>午餐价格：每位158元+15%(11:30-14:00)</li>
 			<li>晚餐价格：每位208元+15% (18:00-21:30)</li>
