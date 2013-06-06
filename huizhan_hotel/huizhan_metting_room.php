@@ -126,7 +126,7 @@
 			<li><h2>国际报告厅</h2><hr></li>
 			<li>
 			 <img style="display: block; width:90%"
-				src="./images/国际报告厅.jpg">
+				src="http://1.dingcanla.sinaapp.com/huizhan_hotel/images/%E5%9B%BD%E9%99%85%E6%8A%A5%E5%91%8A%E5%8E%85.JPG">
 			
 			</li>
 			<li>
