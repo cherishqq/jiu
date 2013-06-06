@@ -6,32 +6,10 @@
 	content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;" />
 <style type="text/css">
 
-.bb {
-	background-color:  red;
-	font-size: 14px;
-	line-height: 20px;
-}
 
-.order-list     {
-	border : 1px solid #d0d0d0;
-	-moz-border-radius:  5px;
-	-webkit-border-radius:  5px;
-	border-radius : 5px;
-	overflow : hidden;
-	zoom : 1;
-	background-color:  #fff;
-    padding:  5px 10px;
-    margin:  10px 10px;
-}
-
-.content-list {
-	 margin : 0;
-     padding: 0;
-	
-}
 
 .list-item {
-	margin : 0;
+	 margin : 0;
      padding: 0;
 }
 
@@ -41,7 +19,14 @@
 </head>
 <body>
 
-	<div class=" order-list bb">
+  <div data-role="dialog">
+  
+  	<div data-role="header" data-theme="b">
+			<h1>海风卡详情</h1>
+	</div>
+  
+   <div data-role="content"> 
+	<div class="order-list bb">
 	     <h3>海风礼卡详情</h3>
 	     <b></b>
 	     <br>
@@ -49,7 +34,7 @@
 		金额：5000元
 	</div>
 	
-   <div class=" order-list bb">
+   <div class="order-list bb">
 	     <h3>海风礼卡消费范围</h3>
 	     <b></b>
 	     
@@ -60,10 +45,8 @@
 		酒店专项产品，如粽子、月饼等
 	</div>
 	
-	  <div class=" order-list bb">
-	     <h4>使用须知</h4>
-	     <b></b>
-	     <br>		
+	  <div class="order-list bb">
+	     <h3>使用须知</h3>
 		<ul>
 		  <li>只用于直接消费结算，不做押金、保证金等使用，消费时可与其他优惠同享</li>
 		   <li>不适用于30人及以上会议和餐饮活动、10间房以上的团队团组和长包房</li>
@@ -72,9 +55,10 @@
 		   <li>不记名，不挂失，遗失不补</li>
 		   <li>不可兑换现金，不找零，不退还余额</li>
 		   <li>财务部根据所售金额，三日内将卡制作后，由销售人员送至客户手中，并由客户填写签收单</li>
-		   <li>每张卡附赠海之恋礼品券一张</li>		   
+		   <li>每张卡附赠海之恋礼品券一张</li>	   
 		</ul>
+		</div>
 	</div>
-
+</div>
 </body>
 </html>

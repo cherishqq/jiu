@@ -262,6 +262,11 @@ a:hover {
 	-webkit-border-radius: 15px 15px 0 0;
 	border-radius: 15px 15px 0 0;
 }
+
+.list ul li {
+	margin : 5px 0 0 0;
+}
+
 .list hr {
 	height: 1px;
 	border: none;
@@ -372,4 +377,73 @@ background-position: -120px 0px;
 	height: 1px;
 	border: none;
 	border-top: 1px dashed #D8C8BA;
+}
+
+
+.bb {
+	background-color:  red;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.order-list     {
+	border : 1px solid #d0d0d0;
+	-moz-border-radius:  5px;
+	-webkit-border-radius:  5px;
+	border-radius : 5px;
+	overflow : hidden;
+	zoom : 1;
+	background-color:  #fff;
+    padding:  5px 10px;
+    margin:  10px 10px;
+}
+
+.content-list {
+	 margin : 0;
+     padding: 0;
+}
+
+.order-list ul {
+	padding: 5px 0px 0px 10px;
+}
+
+.order-list ul li{
+	 list-style-type: disc;
+}
+
+.conlist{
+	background-color: #fff;
+	padding: 10px;
+    margin-bottom: 10px;
+}
+
+.hotbluetip {
+	border-top: 30px solid #31A9E9;
+	border-right: 10px solid transparent;
+	height: 0;
+	width: 120px;
+	color: #fff;
+	text-align: center;
+	position: relative;
+	margin: 10px 0 10px -15px;
+}
+
+.hotbluetip span {
+	position: absolute;
+	bottom: 15px;
+	right: -5px;
+	height: 10px;
+	width: 120px;
+}
+
+.header_tel {
+	position: absolute;
+	background: url(http://res.m.ctrip.com/html5/Content/images/ico_head.png) 50% 50% no-repeat;
+	background-size: auto 100%;
+	background-position: -17px top;
+	width: 20px!important;
+	height: 20px!important;
+	margin-top: 20px;
+
+
 }

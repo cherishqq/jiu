@@ -165,21 +165,10 @@
 		//		$('#content_container').load("privilege.php");
 
 //				$.get("http://map.baidu.com");
-				$('#content_container').load("map.php",function(data){		
+				$('#content_container').load("map2.php",function(data){		
 						$.getScript("./js/baidumap.js");
 		
 					});
-				
-			    
-		
-				/**
-				$('#content_container').get("http://map.baidu.com",function(data){
-						alert("data loaded:" + data);
-					});
-				**/
-
-		
-	
 				});
 			
 
@@ -209,8 +198,15 @@
 <div data-role="page" id="demo-page" data-theme="b" style="background-color: #E0D3C9;">
  	
  	<div data-role="header" data-theme="b">
-        <h1><span style="overflow: scroll;">厦门国际会议中心酒店</span></h1>
+        <h3 style="width: 170px; margin-left: 60px;"><span >厦门国际会议中心酒店</span></h3>
         <a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
+        <div style="position:absolute; top: -10px;right: 15px; width: 20px; height: 20px;">
+         <a class="header_tel" href="tel:05925959999" data-shadow="false" data-iconshadow="false"  data-inline="true"></a>
+         </div>
+        <div>
+        
+        </div>
+        
     </div><!-- /header -->
 
     <div data-role="content"  id="content_container"  style="background-color: #E0D3C9" > 

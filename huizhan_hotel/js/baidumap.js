@@ -1,17 +1,16 @@
-
-//创建和初始化地图函数：
     function initMap(){
         createMap();//创建地图
         setMapEvent();//设置地图事件
         addMapControl();//向地图添加控件
         addMarker();//向地图中添加marker
+        addPolyline();//向地图中添加线
     }
     
     //创建地图函数：
     function createMap(){
         var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
-        var point = new BMap.Point(118.196179,24.477973);//定义一个中心点坐标
-        map.centerAndZoom(point,13);//设定地图的中心点和坐标并将地图显示在地图容器中
+        var point = new BMap.Point(118.210644,24.484123);//定义一个中心点坐标
+        map.centerAndZoom(point,14);//设定地图的中心点和坐标并将地图显示在地图容器中
         window.map = map;//将map变量存储在全局
     }
     
@@ -37,7 +36,16 @@
     }
     
     //标注点数组
-    var markerArr = [{title:"厦门国际会议中心酒店",content:"我的备注",point:"118.189136|24.47429",isOpen:0,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
+    var markerArr = [{title:"国际会议中心酒店",content:"电话:05925958888",point:"118.195801|24.478379",isOpen:0,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
+		 ,{title:"软件园二期",content:"我的备注",point:"118.187105|24.494361",isOpen:0,icon:{w:21,h:21,l:0,t:46,x:1,lb:10}}
+		 ,{title:"万达商业广场",content:"我的备注",point:"118.18538|24.512116",isOpen:0,icon:{w:21,h:21,l:46,t:46,x:1,lb:10}}
+		 ,{title:"瑞景商业广场",content:"我的备注",point:"118.168205|24.483312",isOpen:0,icon:{w:23,h:25,l:92,t:21,x:9,lb:12}}
+		 ,{title:"观音山游乐场",content:"我的备注",point:"118.204784|24.503403",isOpen:0,icon:{w:21,h:21,l:92,t:0,x:6,lb:5}}
+		 ,{title:"香山游艇码头",content:"我的备注",point:"118.206149|24.488771",isOpen:0,icon:{w:21,h:21,l:92,t:0,x:6,lb:5}}
+		 ,{title:"奥林匹克博物馆",content:"我的备注",point:"118.200472|24.484726",isOpen:0,icon:{w:23,h:25,l:23,t:21,x:9,lb:12}}
+		 ,{title:"厦门国际会展中心",content:"0592-5959999",point:"118.190159|24.474103",isOpen:0,icon:{w:23,h:25,l:23,t:21,x:9,lb:12}}
+		 ,{title:"厦门火车站",content:"我的备注",point:"118.122966|24.472262",isOpen:0,icon:{w:23,h:25,l:23,t:21,x:9,lb:12}}
+		 ,{title:"明发商业广场",content:"我的备注",point:"118.12911|24.483805",isOpen:0,icon:{w:21,h:21,l:115,t:46,x:1,lb:10}}
 		 ];
     //创建marker
     function addMarker(){
@@ -79,7 +87,7 @@
 					_marker.openInfoWindow(_iw);
 				}
 			})()
-        } 
+        }
     }
     //创建InfoWindow
     function createInfoWindow(i){
@@ -92,5 +100,24 @@
         var icon = new BMap.Icon("http://app.baidu.com/map/images/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
         return icon;
     }
+//标注线数组
+    var plPoints = [{style:"solid",weight:4,color:"#f00",opacity:0.6,points:["118.218294|24.539863","118.219444|24.538811"]}
+		 ,{style:"solid",weight:4,color:"#f00",opacity:0.6,points:["118.207946|24.528817","118.218582|24.538811"]}
+		 ,{style:"solid",weight:4,color:"#f00",opacity:0.6,points:["118.217288|24.539074","118.220163|24.539863","118.219588|24.537759"]}
+		 ];
+    //向地图中添加线函数
+    function addPolyline(){
+		for(var i=0;i<plPoints.length;i++){
+			var json = plPoints[i];
+			var points = [];
+			for(var j=0;j<json.points.length;j++){
+				var p1 = json.points[j].split("|")[0];
+				var p2 = json.points[j].split("|")[1];
+				points.push(new BMap.Point(p1,p2));
+			}
+			var line = new BMap.Polyline(points,{strokeStyle:json.style,strokeWeight:json.weight,strokeColor:json.color,strokeOpacity:json.opacity});
+			map.addOverlay(line);
+		}
+	}
     
-    initMap();//创建和初始化地图
+    initMap();//创建和初始化地图	
